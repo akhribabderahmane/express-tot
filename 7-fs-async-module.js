@@ -1,7 +1,8 @@
 const {readFile,writeFile} = require('fs'); // async functions
 
-
+console.log("first task")
 readFile("./content/first.txt",'utf8',(err,result)=>{
+    console.log("second async task")
    if(err){
     console.log(err);
     return;
@@ -24,6 +25,7 @@ readFile("./content/first.txt",'utf8',(err,result)=>{
     });
       
    })
-})
+});
+console.log("third task");
 
 
